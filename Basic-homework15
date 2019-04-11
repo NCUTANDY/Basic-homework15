@@ -1,0 +1,26 @@
+#include <stdio.h> 
+#include <stdlib.h> 
+int main(void)
+{
+    printf("請輸入現在的時間："); 
+
+	int hour,min; 
+
+	scanf("%d %d",&hour,&min); 
+
+	if((hour==7 && min>=30)||(hour>=8 && hour<=16))
+	{ 
+
+		printf("結果：現在是上學時間\n");
+
+	}
+
+	else
+	{
+
+		printf("結果：現在是放學時間\n");
+
+	}
+    system("pause");
+	return 0 ;
+}
